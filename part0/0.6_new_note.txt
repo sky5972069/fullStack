@@ -1,0 +1,11 @@
+note over browser:
+text modified and press submit button,
+default submition permitted
+end note
+
+browser->browser: redraw html
+browser->server: HTTP POST https://fullstack-exampleapp.herokuapp.com/new_note_spa new_note
+
+note over server:
+server saves new_note
+end note
